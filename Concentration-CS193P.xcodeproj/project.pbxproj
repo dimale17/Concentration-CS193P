@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					B71A0FBE1FC599CA002606BF = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					B71A0FD21FC599CA002606BF = {
 						CreatedOnToolsVersion = 9.1;
@@ -426,11 +426,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TXW9FUZCT3;
 				INFOPLIST_FILE = "Concentration-CS193P/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.customedialabs.Concentration-CS193P";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9ef38c5a-c94a-4eb4-8d22-3f4fdacb7c53";
+				PROVISIONING_PROFILE_SPECIFIER = "General Development Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +443,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TXW9FUZCT3;
 				INFOPLIST_FILE = "Concentration-CS193P/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.customedialabs.Concentration-CS193P";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9ef38c5a-c94a-4eb4-8d22-3f4fdacb7c53";
+				PROVISIONING_PROFILE_SPECIFIER = "General Development Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
