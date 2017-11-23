@@ -14,6 +14,8 @@
 		B71A0FCD1FC599CA002606BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71A0FCB1FC599CA002606BF /* LaunchScreen.storyboard */; };
 		B71A0FD81FC599CA002606BF /* Concentration_CS193PTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A0FD71FC599CA002606BF /* Concentration_CS193PTests.swift */; };
 		B71A0FE31FC599CA002606BF /* Concentration_CS193PUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A0FE21FC599CA002606BF /* Concentration_CS193PUITests.swift */; };
+		B759291C1FC5F343003C8CCD /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759291B1FC5F343003C8CCD /* Concentration.swift */; };
+		B759291E1FC5F43B003C8CCD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759291D1FC5F43B003C8CCD /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B71A0FDE1FC599CA002606BF /* Concentration-CS193PUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Concentration-CS193PUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71A0FE21FC599CA002606BF /* Concentration_CS193PUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration_CS193PUITests.swift; sourceTree = "<group>"; };
 		B71A0FE41FC599CA002606BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B759291B1FC5F343003C8CCD /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		B759291D1FC5F43B003C8CCD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				B71A0FC21FC599CA002606BF /* AppDelegate.swift */,
 				B71A0FC41FC599CA002606BF /* ViewController.swift */,
+				B759291B1FC5F343003C8CCD /* Concentration.swift */,
+				B759291D1FC5F43B003C8CCD /* Card.swift */,
 				B71A0FC61FC599CA002606BF /* Main.storyboard */,
 				B71A0FC91FC599CA002606BF /* Assets.xcassets */,
 				B71A0FCB1FC599CA002606BF /* LaunchScreen.storyboard */,
@@ -261,6 +267,8 @@
 			files = (
 				B71A0FC51FC599CA002606BF /* ViewController.swift in Sources */,
 				B71A0FC31FC599CA002606BF /* AppDelegate.swift in Sources */,
+				B759291C1FC5F343003C8CCD /* Concentration.swift in Sources */,
+				B759291E1FC5F43B003C8CCD /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
