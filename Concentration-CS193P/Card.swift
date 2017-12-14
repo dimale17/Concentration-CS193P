@@ -7,11 +7,13 @@
 //
 
 import Foundation
+
 struct Card {
+    
     var isFaceUp = false
     var isMatched = false
     var isEverFlipped = false
-    var identifier : Int
+    private var identifier : Int
     
     static var identifierFactory = 0
     static func getUniqueIdentifier() -> Int {
@@ -25,3 +27,14 @@ struct Card {
     
 }
 
+extension Card : Hashable {
+    var hashValue: Int {
+        return identifier
+    }
+    
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+    
+    
+}
