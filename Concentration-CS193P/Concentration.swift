@@ -15,24 +15,27 @@ class Concentration
     var score = 0
     var flipCount = 0
     
-    var emojiChoices = [ "🐧" , "👻", "✏️" ,"🏀", "🐼", "🎃",  "😈", "🤖","👨🏻‍🎓","🦋","🦆","☘️", "☃️"]
+//    var emojiChoices = [ "🐧" , "👻", "✏️" ,"🏀", "🐼", "🎃",  "😈", "🤖","👨🏻‍🎓","🦋","🦆","☘️", "☃️"]
+    var emojiChoices = "🐧👻✏️🏀🐼🎃😈🤖👨🏻‍🎓🦋🦆☘️☃️👜🐶🍒🍿"
     
     
     
     var indexOfOneAndOnlyFaceUpCard : Int? {
         get {
-            var foundIndex  : Int?
-            for index in cards.indices {
-                if cards[index].isFaceUp{
-                    if foundIndex == nil {
-                        foundIndex = index
-                    }
-                    else {
-                        return nil
-                    }
-                }
-            }
-            return foundIndex
+            return cards.indices.filter {cards[$0].isFaceUp == true}.oneAndOnly
+//            var foundIndex  : Int?
+//            for index in cards.indices {
+//                if cards[index].isFaceUp{
+//                    if foundIndex == nil {
+//                        foundIndex = index
+//                    }
+//                    else {
+//                        return nil
+//                    }
+//                }
+//            }
+//            print(foundIndex ?? "nil")
+//            return foundIndex
         }
         set {
             for index in cards.indices {
@@ -86,14 +89,14 @@ class Concentration
 
     }
 
-    var emoji = [ Card : String] ()
+    private var emoji = [ Card : String] ()
     
     func emoji(for card : Card) -> String {
         
         if emoji[card] == nil, emojiChoices.count > 0 {
             let randomStringIndex = emojiChoices.index(emojiChoices.startIndex, offsetBy: emojiChoices.count.arc4random)
             let randomIndex = randomStringIndex
-            emoji[card] = emojiChoices.remove(at: randomIndex)
+            emoji[card] = String(emojiChoices.remove(at: randomIndex))
 
         }
         return  emoji[card] ?? "?"
@@ -160,3 +163,10 @@ extension Sequence {
         return result
     }
 }
+
+extension Collection {
+    var oneAndOnly : Element? {
+        return count ==  1 ? first : nil
+    }
+}
+
